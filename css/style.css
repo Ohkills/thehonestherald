@@ -1,0 +1,204 @@
+
+/* general */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #334155;
+    color: #f1f5f9;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* head */
+
+.header {
+    width: 100%;
+
+    padding: 30px 20px;
+
+    background-color: #9a3412;
+
+    text-align: center;
+
+    border-bottom: 3px solid #7c2d12;
+}
+
+.header h1 {
+    margin: 0;
+
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin: 8px 0 0;
+
+    color: #fed7aa;
+}
+
+
+/* main */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================
+   Introduction
+   ========================= */
+
+.intro {
+    margin-bottom: 30px;
+
+    padding: 25px;
+
+    background-color: #475569;
+
+    border: 1px solid #64748b;
+    border-radius: 8px;
+}
+
+.intro h2 {
+    margin-top: 0;
+
+    font-size: 1.8rem;
+}
+
+.intro p {
+    margin-bottom: 0;
+
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Sources
+   ========================= */
+
+.sources {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.source {
+    padding: 20px;
+
+    background-color: #475569;
+
+    border: 1px solid #64748b;
+    border-radius: 8px;
+
+    transition: background-color 0.2s;
+}
+
+.source:hover {
+    background-color: #526176;
+}
+
+
+.source h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 1.15rem;
+}
+
+
+.source p {
+    margin-bottom: 12px;
+
+    color: #cbd5e1;
+
+    line-height: 1.5;
+}
+
+
+.source a {
+    color: #fdba74;
+
+    text-decoration: none;
+
+    overflow-wrap: anywhere;
+}
+
+.source a:hover {
+    color: #fed7aa;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 25px 20px;
+
+    background-color: #0f172a;
+
+    margin-top: 50px;
+}
+
+
+.footer a {
+    color: #cbd5e1;
+
+    text-decoration: none;
+}
+
+
+.footer a:hover {
+    color: white;
+
+    text-decoration: underline;
+}
+
+
+/* mobile */
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 94%;
+
+        margin-top: 25px;
+    }
+
+    .intro,
+    .source {
+        padding: 18px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+}
+

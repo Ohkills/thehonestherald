@@ -1,105 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>The Honest Herald</title>
     <link href="/css/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-white text-black min-h-screen">
-
+<body class="bg-slate-700 text-white min-h-screen">
 
     <div class="min-h-screen flex flex-col">
 
-
-        <header class="w-full max-w-2xl mx-auto mt-6 px-4 bg-orange-300">
-            <div class="border border-gray-300 h-32 flex flex-col items-center justify-center">
-                <h1 class="text-lg font-semibold">
+        <!-- ==================== head ==================== -->
+        <header class="w-full bg-orange-800 py-8 px-4 shadow-lg">
+            <div class="max-w-7xl mx-auto text-center">
+                <h1 class="text-4xl sm:text-5xl font-bold">
                     The Honest Herald
                 </h1>
 
-                <p class="text-sm text-gray-300 mt-2">
-                    Its not propaganda if its true
+                <p class="mt-2 text-orange-100 text-sm sm:text-base">
+                    its not propaganda if its true
                 </p>
             </div>
         </header>
 
 
+        <!-- ==================== "main"==================== -->
+        <main class="w-full max-w-7xl mx-auto flex-1 px-4 sm:px-6 lg:px-8 py-8">
 
-        <main class="flex-1 w-full max-w-[1400px] mx-auto px-4 mt-8">
+            <!-- Responsive 3-column layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-[180px_minmax(0,1fr)_180px] gap-6">
 
-            <div class="grid grid-cols-1 lg:grid-cols-[220px_minmax(0,700px)_220px] gap-8 justify-center">
 
+                <!-- ==================== ad left ==================== -->
+                <aside class="hidden lg:flex justify-center">
 
-                <aside class="hidden lg:flex">
-                    <div class="border border-gray-300 w-full h-[430px] flex items-center justify-center">
-                        <span class="text-sm text-gray-300">
-                            Space for ad
+                    <div class="w-full h-[400px] bg-slate-600 border border-slate-500 rounded-lg
+                                flex items-center justify-center">
+
+                        <span class="text-slate-300 text-sm text-center px-2">
+                            insert ad here
                         </span>
+
                     </div>
+
                 </aside>
 
 
+                <!-- ==================== center ==================== -->
+                <section class="w-full max-w-3xl mx-auto">
 
-                <section>
 
+                    <div class="bg-slate-600 border border-slate-500 rounded-lg
+                                p-6 text-center shadow">
 
-                    <div class="border border-gray-300 h-20 flex items-center justify-center">
-                        <p class="text-xl">
-                            Intro paragraph
+                        <p class="text-lg sm:text-xl">
+                            explode
                         </p>
+
                     </div>
 
 
+                    <!-- big ad -->
+                    <div class="mt-6 bg-slate-600 border border-slate-500 rounded-lg
+                                min-h-[160px] p-6
+                                flex items-center justify-center text-center">
 
-                    <div class="border border-gray-300 h-40 mt-4 flex items-center justify-center">
-                        <p class="text-xl text-center">
-                            Giant ad to add some irony
+                        <p class="text-xl sm:text-2xl text-slate-200">
+                            insert ad here
                         </p>
+
                     </div>
 
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-20">
+                    <!-- ==================== articles ==================== -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
 
 
-                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
-                            <div class="text-center">
-                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
-                                <p class="text-xs">
-                                    Article link with thumbnail
+
+                        <a href="#"
+                           class="bg-slate-600 border border-slate-500 rounded-lg p-4
+                                  flex items-center gap-4
+                                  hover:bg-slate-500 transition">
+
+                            <div class="w-16 h-16 shrink-0 bg-slate-800 rounded-md
+                                        flex items-center justify-center">
+
+                                <span class="text-xs text-slate-400">
+                                    IMG
+                                </span>
+
+                            </div>
+
+                            <div>
+                                <h2 class="font-semibold">
+                                    title
+                                </h2>
+
+                                <p class="text-sm text-slate-300 mt-1">
+                                    desc
                                 </p>
                             </div>
+
+                        </a>
+
+                        <a href="#"
+                           class="bg-slate-600 border border-slate-500 rounded-lg p-4
+                                  flex items-center gap-4
+                                  hover:bg-slate-500 transition">
+
+                            <div class="w-16 h-16 shrink-0 bg-slate-800 rounded-md
+                                        flex items-center justify-center">
+
+                                <span class="text-xs text-slate-400">
+                                    IMG
+                                </span>
+
+                            </div>
+
+                            <div>
+                                <h2 class="font-semibold">
+                                    title
+                                </h2>
+
+                                <p class="text-sm text-slate-300 mt-1">
+                                    desc
+                                </p>
+                            </div>
+
                         </a>
 
 
-                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
-                            <div class="text-center">
-                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
-                                <p class="text-xs">
-                                    Article link with thumbnail
+
+                        <a href="#"
+                           class="bg-slate-600 border border-slate-500 rounded-lg p-4
+                                  flex items-center gap-4
+                                  hover:bg-slate-500 transition">
+
+                            <div class="w-16 h-16 shrink-0 bg-slate-800 rounded-md
+                                        flex items-center justify-center">
+
+                                <span class="text-xs text-slate-400">
+                                    IMG
+                                </span>
+
+                            </div>
+
+                            <div>
+                                <h2 class="font-semibold">
+                                    title
+                                </h2>
+
+                                <p class="text-sm text-slate-300 mt-1">
+                                    desc
                                 </p>
                             </div>
+
                         </a>
 
-                        <!-- Article 3 -->
-                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
-                            <div class="text-center">
-                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
-                                <p class="text-xs">
-                                    Article link with thumbnail
-                                </p>
-                            </div>
-                        </a>
 
-                        <!-- Article 4 -->
-                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
-                            <div class="text-center">
-                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
-                                <p class="text-xs">
-                                    Article link with thumbnail
+
+                        <a href="#"
+                           class="bg-slate-600 border border-slate-500 rounded-lg p-4
+                                  flex items-center gap-4
+                                  hover:bg-slate-500 transition">
+
+                            <div class="w-16 h-16 shrink-0 bg-slate-800 rounded-md
+                                        flex items-center justify-center">
+
+                                <span class="text-xs text-slate-400">
+                                    IMG
+                                </span>
+
+                            </div>
+
+                            <div>
+                                <h2 class="font-semibold">
+                                    title
+                                </h2>
+
+                                <p class="text-sm text-slate-300 mt-1">
+                                    desc
                                 </p>
                             </div>
+
                         </a>
 
                     </div>
@@ -107,13 +193,18 @@
                 </section>
 
 
+                <!-- ==================== ad right ==================== -->
+                <aside class="hidden lg:flex justify-center">
 
-                <aside class="hidden lg:flex">
-                    <div class="border border-gray-300 w-full h-[390px] flex items-center justify-center">
-                        <span class="text-sm text-gray-300">
-                            Space for ad
+                    <div class="w-full h-[400px] bg-slate-600 border border-slate-500 rounded-lg
+                                flex items-center justify-center">
+
+                        <span class="text-slate-300 text-sm text-center px-2">
+                            insert ad here
                         </span>
+
                     </div>
+
                 </aside>
 
             </div>
@@ -121,16 +212,34 @@
         </main>
 
 
+        <!-- ==================== bottom ==================== -->
+        <footer class="w-full bg-slate-900 mt-auto">
 
-        <footer class="w-full mt-12">
-            <div class="border border-gray-300 h-28 flex items-center justify-center mx-1">
-                <p class="text-2xl text-gray-200">
-                    Footer (legal, contact us...)
-                </p>
+            <div class="max-w-7xl mx-auto px-4 py-6">
+
+                <nav class="flex flex-col sm:flex-row justify-center
+                            items-center gap-4 sm:gap-8">
+
+                    <a href="#" class="text-slate-300 hover:text-white transition">
+                        Legal
+                    </a>
+
+                    <a href="#" class="text-slate-300 hover:text-white transition">
+                        Contact Us
+                    </a>
+
+                    <a href="#" class="text-slate-300 hover:text-white transition">
+                        About Us
+                    </a>
+
+                </nav>
+
             </div>
+
         </footer>
 
     </div>
 
 </body>
 </html>
+```

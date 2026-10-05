@@ -52,9 +52,7 @@ body {
 }
 
 
-/* =========================
-   Introduction
-   ========================= */
+/* intro */
 
 .intro {
     margin-bottom: 30px;
@@ -80,71 +78,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================
-   Sources
-   ========================= */
-
-.sources {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 15px;
-}
-
-
-.source {
-    padding: 20px;
-
-    background-color: #475569;
-
-    border: 1px solid #64748b;
-    border-radius: 8px;
-
-    transition: background-color 0.2s;
-}
-
-.source:hover {
-    background-color: #526176;
-}
-
-
-.source h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-
-    font-size: 1.15rem;
-}
-
-
-.source p {
-    margin-bottom: 12px;
-
-    color: #cbd5e1;
-
-    line-height: 1.5;
-}
-
-
-.source a {
-    color: #fdba74;
-
-    text-decoration: none;
-
-    overflow-wrap: anywhere;
-}
-
-.source a:hover {
-    color: #fed7aa;
-
-    text-decoration: underline;
-}
-
-
-/* =========================
-   Footer
-   ========================= */
+/* FEET */
 
 .footer {
     display: flex;

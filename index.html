@@ -1,18 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link href="./output.css" rel="stylesheet">
-    <title>The honest Herald</title>
-  </head>
-  <body>
-    <header>
-      <h1>The honest Herald</h1>
-    </header>
-    <main></main>
-    <footer></footer>
-    <script src="./js/emailpopup.js"></script>
-    <script src="./js/adcycle.js"></script>
-    <script src="./js/datacollection.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Honest Herald</title>
+    <link href="/css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-black min-h-screen">
+
+
+    <div class="min-h-screen flex flex-col">
+
+
+        <header class="w-full max-w-2xl mx-auto mt-6 px-4 bg-orange-300">
+            <div class="border border-gray-300 h-32 flex flex-col items-center justify-center">
+                <h1 class="text-lg font-semibold">
+                    The Honest Herald
+                </h1>
+
+                <p class="text-sm text-gray-300 mt-2">
+                    Its not propaganda if its true
+                </p>
+            </div>
+        </header>
+
+
+
+        <main class="flex-1 w-full max-w-[1400px] mx-auto px-4 mt-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-[220px_minmax(0,700px)_220px] gap-8 justify-center">
+
+
+                <aside class="hidden lg:flex">
+                    <div class="border border-gray-300 w-full h-[430px] flex items-center justify-center">
+                        <span class="text-sm text-gray-300">
+                            Space for ad
+                        </span>
+                    </div>
+                </aside>
+
+
+
+                <section>
+
+
+                    <div class="border border-gray-300 h-20 flex items-center justify-center">
+                        <p class="text-xl">
+                            Intro paragraph
+                        </p>
+                    </div>
+
+
+
+                    <div class="border border-gray-300 h-40 mt-4 flex items-center justify-center">
+                        <p class="text-xl text-center">
+                            Giant ad to add some irony
+                        </p>
+                    </div>
+
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-20">
+
+
+                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
+                            <div class="text-center">
+                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
+                                <p class="text-xs">
+                                    Article link with thumbnail
+                                </p>
+                            </div>
+                        </a>
+
+
+                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
+                            <div class="text-center">
+                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
+                                <p class="text-xs">
+                                    Article link with thumbnail
+                                </p>
+                            </div>
+                        </a>
+
+                        <!-- Article 3 -->
+                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
+                            <div class="text-center">
+                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
+                                <p class="text-xs">
+                                    Article link with thumbnail
+                                </p>
+                            </div>
+                        </a>
+
+                        <!-- Article 4 -->
+                        <a href="#" class="border border-gray-300 h-24 flex items-center justify-center hover:bg-white hover:text-black transition">
+                            <div class="text-center">
+                                <div class="h-10 w-14 mx-auto mb-2 bg-gray-700"></div>
+                                <p class="text-xs">
+                                    Article link with thumbnail
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+
+                <aside class="hidden lg:flex">
+                    <div class="border border-gray-300 w-full h-[390px] flex items-center justify-center">
+                        <span class="text-sm text-gray-300">
+                            Space for ad
+                        </span>
+                    </div>
+                </aside>
+
+            </div>
+
+        </main>
+
+
+
+        <footer class="w-full mt-12">
+            <div class="border border-gray-300 h-28 flex items-center justify-center mx-1">
+                <p class="text-2xl text-gray-200">
+                    Footer (legal, contact us...)
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
 </html>

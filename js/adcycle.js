@@ -5,7 +5,12 @@ const images = [
     "assets/ads/hearingaid.png",
     "assets/ads/taichi.png",
     "assets/ads/what.png",
-    "assets/ads/gamble.png"
+    "assets/ads/gamble.png",
+    "assets/ads/cabinslop.png",
+    "assets/ads/doctorre.png",
+    "assets/ads/Feet.png",
+    "assets/ads/diggy.png",
+    "assets/ads/aislop.png"
 ];
 
 

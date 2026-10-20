@@ -1,24 +1,31 @@
-setTimeout(function () {})
-
 const images = [
-    car.png,
-    hearingaid.png,
-    sonion.png,
-    taichi.png,
-    what.png
+    "assets/ads/hearingaid.png",
+    "assets/ads/sonion.png",
+    "assets/ads/taichi.png",
+    "assets/ads/what.png",
+    "assets/ads/gamble.png"
 ];
 
-let CurrentImage = 0;
+const interval = 5000;
 
-setInterval(() => {
-    images[CurrentImage].style.display = "none";
 
-    CurrentImage++;
+const containers = document.querySelectorAll(".random-image");
 
-    if (CurrentImage >= images.length) {
-        CurrentImage = 0;
-    }
+function changeimages() {
+    containers.forEach(container => {
+        const img = container.querySelector("img");
 
-    images[CurrentImage].style.display = "block";
-}, 3000);
+        if (!img) return;
 
+
+            let newimage;
+
+            do {
+                newimage = images[Math.floor(Math.random() * images.length)];
+            } while (newimage === img.getAttribute("src") && images.length > 1);
+
+            img.src = newimage;
+
+    });
+}
+setinterval(changeimages, interval);
